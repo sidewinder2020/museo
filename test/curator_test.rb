@@ -19,4 +19,12 @@ class CuratorTest < Minitest::Test
     assert_equal [], curator.photographs
   end
 
+  def test_you_can_add_museums
+    curator = Curator.new
+
+    curator.add_museum({name: "MoMA"})
+
+    assert_equal curator.museums
+  end
+
 end

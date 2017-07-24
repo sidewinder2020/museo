@@ -9,4 +9,8 @@ attr_accessor :artists, :museums, :photographs
     @photographs = []
   end
 
+  def add_museum(name)
+    @museums << name
+  end
+
 end
