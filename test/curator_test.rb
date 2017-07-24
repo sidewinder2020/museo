@@ -20,7 +20,6 @@ class CuratorTest < Minitest::Test
   end
 
   def test_you_can_add_museums
-    skip
     curator = Curator.new
     museum = Museum.new({name: "MoMA"})
 
@@ -30,6 +29,8 @@ class CuratorTest < Minitest::Test
   end
 
   def test_it_can_add_artists
+    skip
+    #works, but want to figure out museum
     curator = Curator.new
     artist = Artist.new({name: "Ansel Adams", born: 1902, died: 1984, country: "United States"})
 
@@ -39,6 +40,8 @@ class CuratorTest < Minitest::Test
   end
 
   def test_it_can_count_artists
+    skip
+    #works, but want to figure out museum
     curator = Curator.new
     artist = Artist.new({name: "Ansel Adams", born: 1902, died: 1984, country: "United States"})
 
@@ -47,4 +50,13 @@ class CuratorTest < Minitest::Test
     assert_equal 1, curator.artists.count
   end
 
+  def test_it_can_determine_artists_id
+    skip
+    curator = Curator.new
+    artist = Artist.new({name: "Ansel Adams", born: 1902, died: 1984, country: "United States"})
+
+    curator.add_artist({name: "Ansel Adams", born: 1902, died: 1984, country: "United States"})
+
+    assert_equal
+  end
 end

@@ -12,12 +12,22 @@ attr_accessor :artists, :museums, :photographs
     @photographs = []
   end
 
-  # def add_museum(name)
-  #   @museums << name
-  # end
-
-  def add_artist(name)
-    @artists << name
+  def add_museum(name)
+    @museums << name
+    Museum.new(museum_hash)
+    # self.blogs << [Date.parse(date),text]
+    # new_blog = [Date.parse(date),text]
+    # Blog.new(@username,date,text
   end
+
+  # def add_artist(name)
+  #   @artists << name
+  #   @id =
+  #   #it's place in the array
+  # end
+  #
+  # def add_photograph(name)
+  #   @photographs << name
+  # end
 
 end
